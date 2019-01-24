@@ -3,8 +3,11 @@
     
     <h1>{{ msg }}</h1>
    <input type="text" placeholder="Search">
+   
    <v-dialog v-model="dialog" scrollable max-width="300px">
+    
       <v-btn slot="activator" color="primary" dark>FILTER</v-btn>
+     
       <v-card>
         <v-card-title>Select what to filter by:</v-card-title>
         <v-divider></v-divider>
