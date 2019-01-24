@@ -55,7 +55,7 @@
         <v-divider></v-divider>
         <v-card-actions>
           <v-btn color="blue darken-1" flat @click="dialog = false">Close</v-btn>
-          <v-btn color="blue darken-1" flat @click="dialog = false">Save</v-btn>
+          <v-btn color="blue darken-1" v-on:click.prevent="get">Save</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -101,7 +101,13 @@ export default {
           { imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Paris_-_Blick_vom_gro%C3%9Fen_Triumphbogen.jpg', id: 'aadsfhbkhlk1241', title: 'Meetup in Paris' }
         ]
     }
+  },
+  methods: {
+    get: function(){
+      this.$http.get("http://localhost:8081/rest/drink")
+    }
   }
+
 }
 </script>
 
