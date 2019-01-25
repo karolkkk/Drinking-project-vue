@@ -6,7 +6,6 @@ import Signin from '@/components/Signin'
 import SignUp from '@/components/SignUp'
 //import carousel from '@/components/carousel'
 import NotFound from '@/pages/PageNotFound'
-import Modal from '@/components/Modal'
 import drinks from '@/components/drinks'
 
 
@@ -43,11 +42,7 @@ export default new Router({
       name: 'drinks',
       component: drinks
     },
-    {
-      path: '/modal',
-      name: 'modal',
-      component: Modal
-    },
+   
     
 
    

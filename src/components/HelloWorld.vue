@@ -3,7 +3,7 @@
     
     <h1>{{ msg }}</h1>
    
- 
+  
  
    <input type="text" placeholder="Search">
    
@@ -95,16 +95,19 @@
 </template>
 
 <script>
+
 export default {
   name: 'HelloWorld',
+  
   data () {
     return {
       msg: 'Welcome to DRINKING PROJECT',
       dialogm1: '',
       dialog: false,
+      
        meetups: [
-          { imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg', id: 'afajfjadfaadfa323', title: 'Tequila Sunrise' },
-          { imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Paris_-_Blick_vom_gro%C3%9Fen_Triumphbogen.jpg', id: 'aadsfhbkhlk1241', title: 'Meetup in Paris' }
+          { imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/16-09-17-WikiLovesCocktails-Drink-Img0284_1.jpg', id: 'afajfjadfaadfa323', title: 'Tequila Sunrise' },
+          { imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Mojito_de_fresa_por_el_rey_del_mojito_Raimon_Social_Club.jpg', id: 'aadsfhbkhlk1241', title: 'Meetup in Paris' }
         ]
     }
   },
