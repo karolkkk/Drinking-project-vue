@@ -8,7 +8,7 @@ import SignUp from '@/components/SignUp'
 import NotFound from '@/pages/PageNotFound'
 import Modal from '@/components/Modal'
 import drinks from '@/components/drinks'
-import List from '@/components/List'
+
 
 Vue.use(Router)
 Vue.use(Vuetify)
@@ -48,11 +48,7 @@ export default new Router({
       name: 'modal',
       component: Modal
     },
-    {
-      path: '/list',
-      name: 'list',
-      component: List
-    }
+    
 
    
   ],

@@ -2,12 +2,15 @@
   <div >
     
     <h1>{{ msg }}</h1>
+   
+ 
+ 
    <input type="text" placeholder="Search">
    
    <v-dialog v-model="dialog" scrollable max-width="300px">
-    
+   
       <v-btn slot="activator" color="primary" dark>FILTER</v-btn>
-     
+    
       <v-card>
         <v-card-title>Select what to filter by:</v-card-title>
         <v-divider></v-divider>
@@ -62,7 +65,10 @@
    <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
+   <router-link :to="{name: 'drinks'}">
+      
+  <li><a href="#drinks">Drinks</a></li>
+  </router-link>
   <li><a href="#about">About</a></li>
   <router-link :to="{name: 'signup'}">
   <li style="float:right"><button class="button">Sign up</button></li>
@@ -97,7 +103,7 @@ export default {
       dialogm1: '',
       dialog: false,
        meetups: [
-          { imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg', id: 'afajfjadfaadfa323', title: 'Meetup in New York' },
+          { imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg', id: 'afajfjadfaadfa323', title: 'Tequila Sunrise' },
           { imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Paris_-_Blick_vom_gro%C3%9Fen_Triumphbogen.jpg', id: 'aadsfhbkhlk1241', title: 'Meetup in Paris' }
         ]
     }
@@ -121,4 +127,19 @@ export default {
     font-size: 2em;
     padding: 20px;
   }
+  li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
 </style>
